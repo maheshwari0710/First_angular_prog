@@ -1,0 +1,12 @@
+<div>
+    <h1>TODO List</h1>
+    <ul>
+    <li *ngFor="Let activity of activities">
+        <input type="checkbox"[{ngModel}]="activity.done"/>{{activity.name }}
+
+    </li>
+    </ul>
+    <div>
+        <input type="text"[{ngModel}]="newActivity"(keyup.enter)
+    </div>
+</div>
